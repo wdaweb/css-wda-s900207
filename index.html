@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      transition: 0.5s;
+    }
+
+    .container {
+      width: 100%;
+      margin: auto;
+      padding: 5%;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .center,
+    .html,
+    .css3,
+    .javascript,
+    .jquery,
+    .bootstrap,
+    .sass,
+    .vue {
+      width: 100%;
+      padding: 5%;
+      /* border: 1px solid #333; */
+    }
+
+
+    .center h1,
+    h3,
+    h4 {
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    p {
+      padding-bottom: 5%;
+    }
+
+
+    .line,
+    .line2,
+    .line3,
+    .line4,
+    .line5,
+    .line6,
+    .line7 {
+      width: 100%;
+      height: 1px;
+      border-bottom: 5px solid lightgray;
+      border-radius: 10px;
+      margin-bottom: 5%;
+    }
+
+
+    @media (min-width:992px) {
+      .container {
+        width: 95%;
+        height: 100vh;
+        position: relative;
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .html,
+      .css3,
+      .javascript,
+      .jquery,
+      .bootstrap,
+      .sass,
+      .vue {
+        width: 8%;
+        height: 28vh;
+        padding: 0;
+        position: absolute;
+        text-align: center;
+        line-height: 0;
+      }
+
+      .center {
+        width: 20%;
+        height: 45vh;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .html {
+        top: 6%;
+        left: 6%;
+      }
+
+      .css3 {
+        top: -1%;
+        left: 26%;
+      }
+
+      .javascript {
+        top: 37%;
+        left: 7%;
+      }
+
+      .jquery {
+        top: 64%;
+        left: 23%;
+      }
+
+      .bootstrap {
+        top: 3%;
+        left: 76%;
+      }
+
+      .sass {
+        top: 26%;
+        left: 90%;
+      }
+
+      .vue {
+        top: 65%;
+        left: 79%;
+      }
+
+      p {
+        display: none;
+      }
+
+      .line {
+        width: 20%;
+        height: 100px;
+        border: 0px solid lightgray;
+        position: relative;
+      }
+
+      .line::before {
+        content: "";
+        position: absolute;
+        left: 68%;
+        top: 104%;
+        width: 100%;
+        height: 50px;
+        box-sizing: border-box;
+        border-bottom: 3px solid lightgray;
+        transform-origin: bottom center;
+        transform: rotateZ(20deg)scale(1.5);
+      }
+
+
+      .line2 {
+        width: 8%;
+        height: 100px;
+        border: 0px solid lightgray;
+        position: relative;
+      }
+
+      .line2::before {
+        content: "";
+        position: absolute;
+        left: 154%;
+        top: 66%;
+        width: 100%;
+        height: 50px;
+        box-sizing: border-box;
+        border-bottom: 3px solid lightgray;
+        transform-origin: bottom center;
+        transform: rotateZ(40deg)scale(1.5);
+      }
+
+      .line3 {
+        width: 17%;
+        height: 100px;
+        border: 0px solid lightgray;
+        position: relative;
+      }
+
+      .line3::before {
+        content: "";
+        position: absolute;
+        left: -71%;
+        top: 319%;
+        width: 100%;
+        height: 50px;
+        box-sizing: border-box;
+        border-bottom: 3px solid lightgray;
+        transform-origin: bottom center;
+        transform: rotateZ(0deg)scale(1.5);
+      }
+
+      .line4 {
+        width: 10%;
+        height: 100px;
+        border: 0px solid lightgray;
+        position: relative;
+      }
+
+      .line4::before {
+        content: "";
+        position: absolute;
+        left: -166%;
+        top: 436%;
+        width: 100%;
+        height: 50px;
+        box-sizing: border-box;
+        border-bottom: 3px solid lightgray;
+        transform-origin: bottom center;
+        transform: rotateZ(145deg)scale(1.5);
+      }
+
+      .line5 {
+        width: 13%;
+        height: 100px;
+        border: 0px solid lightgray;
+        position: relative;
+      }
+
+      .line5::before {
+        content: "";
+        position: absolute;
+        left: 55%;
+        top: 80%;
+        width: 100%;
+        height: 50px;
+        box-sizing: border-box;
+        border-bottom: 3px solid lightgray;
+        transform-origin: bottom center;
+        transform: rotateZ(149deg)scale(1.5);
+      }
+
+      .line6 {
+        width: 20%;
+        height: 100px;
+        border: 0px solid lightgray;
+        position: relative;
+      }
+
+      .line6::before {
+        content: "";
+        position: absolute;
+        left: 5%;
+        top: 215%;
+        width: 100%;
+        height: 50px;
+        box-sizing: border-box;
+        border-bottom: 3px solid lightgray;
+        transform-origin: bottom center;
+        transform: rotateZ(352deg)scale(1.5);
+      }
+
+      .line7 {
+        width: 15%;
+        height: 100px;
+        border: 0px solid lightgray;
+        position: relative;
+      }
+
+      .line7::before {
+        content: "";
+        position: absolute;
+        left: 429%;
+        top: 280%;
+        width: 100%;
+        height: 50px;
+        box-sizing: border-box;
+        border-bottom: 3px solid lightgray;
+        transform-origin: bottom center;
+        transform: rotateZ(30deg)scale(1.5);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="center">
+        <img src="./images/wda.png">
+        <h1>泰山職訓所</h1>
+        <h3>從零開始的網頁設計課程</h3>
+        <h4>轉職網頁開發人員 掌握就業必備技能</h4>
+        <h4>由淺入深學習技術 強化職場的競爭力</h4>
+      </div>
+      <div class="line"></div>
+      <div class="html">
+        <img src="./images/html.png">
+        <h1>Html</h1>
+        <p>
+          超文本標記語言是一種用於建立網頁的標準標記語言。HTML是一種基礎技術，常與CSS、JavaScript一起被眾多網站用於設計網頁、網頁應用程式以及行動應用程式的使用者介面。網頁瀏覽器可以讀取HTML檔案，並將其彩現成視覺化網頁。HTML描述了一個網站的結構語意隨著線索的呈現，使之成為一種標記語言而非程式語言。
+        </p>
+      </div>
+      <div class="line2"></div>
+      <div class="css3">
+        <img src="./images/css.png">
+        <h1>CSS3</h1>
+        <p>階層式樣式表（英語：Cascading Style
+          Sheets，縮寫：CSS；又稱串樣式列表、級聯樣式表、串接樣式表、階層式樣式表）是一種用來為結構化文件（如HTML文件或XML應用）添加樣式（字型、間距和顏色等）的電腦語言，由W3C定義和維護。CSS3現在已被大部分現代瀏覽器支援，而下一版的CSS4仍在開發中。
+        </p>
+      </div>
+      <div class="line3"></div>
+      <div class="javascript">
+        <img src="./images/js.png">
+        <h1>JavaScript</h1>
+        <p>
+          JavaScript是一門基於原型和頭等函數的多範式進階直譯程式語言，它支援物件導向程式設計、指令式編程和函數式程式設計。它提供方法來操控文字、陣列、日期以及正規表示式等。不支援I/O，比如網路、儲存和圖形等，但這些都可以由它的宿主環境提供支援。它由Ecma透過ECMAScript實作語言的標準化。
+        </p>
+      </div>
+      <div class="line4"></div>
+      <div class="jquery">
+        <img src="./images/jq.png">
+        <h1>jQuery</h1>
+        <p>jQuery是一套跨瀏覽器的JavaScript函式庫，用於簡化HTML與JavaScript之間的操作。約翰·雷西格在2006年1月的BarCamp NYC上釋出了第一個版本。目前由Dave
+          Methvin領導的團隊進行開發。</p>
+      </div>
+      <div class="line5"></div>
+      <div class="bootstrap">
+        <img src="./images/bs.png">
+        <h1>Bootstrap</h1>
+        <p>
+          Bootstrap是一組用於網站和網路應用程式開發的開源前端框架，包括HTML、CSS及JavaScript的框架，提供字體排印、表單、按鈕、導航及其他各種元件及Javascript擴充套件，旨在使動態網頁和Web應用的開發更加容易。
+        </p>
+      </div>
+      <div class="line6"></div>
+      <div class="sass">
+        <img src="./images/sass.png">
+        <h1>Sass</h1>
+        <p>Sass是一個最初由Hampton Catlin設計並由Natalie Weizenbaum開發的層疊樣式表語言。在開發最初版本之後，Weizenbaum和Chris
+          Eppstein繼續通過SassScript來繼續擴充Sass的功能。SassScript是一個在Sass檔案中使用的小型手稿語言。</p>
+      </div>
+      <div class="line7"></div>
+      <div class="vue">
+        <img src="./images/vue.png">
+        <h1>Vue.js</h1>
+        <p>Vue.js是一個用於建立使用者介面的開源MVVM前端JavaScript框架，也是一個建立單頁應用的Web應用框架。Vue.js由尤雨溪建立，由他和其他活躍的核心團隊成員維護。
+          2016年一項針對JavaScript框架的調查表明，Vue有著89%的開發者滿意度。</p>
+      </div>
+      <div class="line8"></div>
+    </div>
+  </div>
+</body>
+
+</html>
